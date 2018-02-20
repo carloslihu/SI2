@@ -1,0 +1,15 @@
+SOAP WS
+	Ties/Stubs para que el cliente y servidor se piensen que están al lado
+		Para que actúen en representación de su respectivo lado
+	Cliente y Servidor se comunican mediante http en este caso
+
+	WSDL para describir el servicio (metodos, mensajes y datos)
+
+
+	dbclienthost es en qué lado QUIERO que se comunique
+	db.host es dónde está de verdad (puedo cambiar este de lugar)
+
+	ej 6: clase java visaDAOWS hacer override de isDirectConnection y setDirectConnection (no hacerlo en la clase tester como dice el enunciado)
+		respuesta a ultima pregiunta: el cliente querra tener info de si ha salido bien (con detalles) o si ha salido mal (y por que) o algo así
+		
+
