@@ -481,10 +481,12 @@ public class VisaDAOWS extends DBTester {
     /**
      * @param debug the debug to set
      */
+     /*
      @WebMethod(exclude = true)
     public void setDebug(String debug) {
         this.debug = (debug.equals("true"));
     }
+    * */
 
 
     /**
