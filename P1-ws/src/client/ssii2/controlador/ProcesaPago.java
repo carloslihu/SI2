@@ -44,7 +44,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import ssii2.visa.*;
-import ssii2.visa.dao.VisaDAO;
+//import ssii2.visa.dao.VisaDAO;
+import ssii2.visa.VisaDAOWSService; // Stub generado automáticamente
+import ssii2.visa.VisaDAOWS; // Stub generado automáticamente
+import javax.xml.ws.WebServiceRef;
+import javax.xml.ws.BindingProvider;
 
 /**
  *
@@ -148,7 +152,16 @@ private void printAddresses(HttpServletRequest request, HttpServletResponse resp
             return;
         }
 
-		VisaDAO dao = new VisaDAO();
+		VisaDAOWSService service = new VisaDAOWSService();
+		VisaDAOWS dao = service.getVisaDAOWSPort();
+		String url = getServletContext().getInitParameter("url-server");
+		try {
+			BindingProvider bp = (BindingProvider) dao;
+			bp.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
+		} catch (Exception e){
+			enviaError(new Exception("servidor no encontrado"), request, response);
+			return;
+		}
 		HttpSession sesion = request.getSession(false);
 		if (sesion != null) {
 			pago = (PagoBean) sesion.getAttribute(ComienzaPago.ATTR_PAGO);
@@ -171,7 +184,7 @@ private void printAddresses(HttpServletRequest request, HttpServletResponse resp
             return;
         }
 
-	if (! dao.realizaPago(pago)) {      
+	if (dao.realizaPago(pago) == null) {      
             enviaError(new Exception("Pago incorrecto"), request, response);
             return;
         }

@@ -1,5 +1,5 @@
 #!/bin/bash
-# abrimos maquina virtual
+
 
 sudo /opt/si2/virtualip.sh eth0
 #local
@@ -9,4 +9,6 @@ export J2EE_HOME=/usr/local/glassfish-4.1.1/glassfish
 
 ant todo
 
+# abrimos maquina virtual
+asadmin start-domain domain1
 zip -r SI2P1A_2401_2.zip *

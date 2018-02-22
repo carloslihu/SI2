@@ -327,12 +327,13 @@ public class VisaDAOWS extends DBTester {
      * @param idComercio
      * @return
      */
-    public PagoBean[] getPagos(String idComercio) {
+    @WebMethod(operationName="realizaPago")
+    public ArrayList <PagoBean> getPagos(@WebParam(name = "idComercio") String idComercio) {
 
         PreparedStatement pstmt = null;
         Connection pcon = null;
         ResultSet rs = null;
-        PagoBean[] ret = null;
+        //PagoBean[] ret = null;
         ArrayList<PagoBean> pagos = null;
         String qry = null;
 
@@ -366,10 +367,10 @@ public class VisaDAOWS extends DBTester {
 
                 pagos.add(p);
             }
-
+			/*
             ret = new PagoBean[pagos.size()];
             ret = pagos.toArray(ret);
-
+			*/
             // Cerramos / devolvemos la conexion al pool
             pcon.close();
 
@@ -391,7 +392,7 @@ public class VisaDAOWS extends DBTester {
             }
         }
 
-        return ret;
+        return pagos;
     }
 
     // Borrar los pagos asociados a un comercio

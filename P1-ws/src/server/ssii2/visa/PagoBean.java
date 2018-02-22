@@ -6,7 +6,6 @@
  */
 
 package ssii2.visa;
-
 /**
  *
  * @author jaime
