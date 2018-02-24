@@ -11,4 +11,4 @@ ant todo
 
 # abrimos maquina virtual
 asadmin start-domain domain1
-zip -r SI2P1A_2401_2.zip *
+zip -r SI2P1A_2401_2.zip P1-base P1-ws memoria-p1a.pdf
