@@ -48,6 +48,7 @@ import javax.xml.ws.WebServiceRef;
 import javax.xml.ws.BindingProvider;
 import javax.ejb.EJB;
 import ssii2.visa.VisaDAOLocal;
+import javax.ejb.EJBException;
 
 /**
  *
@@ -191,6 +192,8 @@ private void printAddresses(HttpServletRequest request, HttpServletResponse resp
     try{
 		pago = dao.realizaPago(pago);
 	} catch (EJBException e){
+		if(sesion!=null)
+			sesion.invalidate();
 		enviaError(new Exception("Saldo insuficiente"), request, response);
         return;
         //TODO invalidar sesion

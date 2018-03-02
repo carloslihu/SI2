@@ -65,18 +65,10 @@ public class VisaDAOBean extends DBTester implements VisaDAOLocal{
     
     private static final String SELECT_TARJETA_SALDO_QRY =
 					"select saldo from tarjeta "+
-					"where numeroTarjeta=?" +
-                    " and titular=? " +
-                    " and validaDesde=? " +
-                    " and validaHasta=? " +
-                    " and codigoVerificacion=? ";
+					"where numeroTarjeta=?";
                     
 	private static final String UPDATE_TARJETA_SALDO_QRY =
-					"update tarjeta set saldo = ? where numeroTarjeta=?" +
-                    " and titular=? " +
-                    " and validaDesde=? " +
-                    " and validaHasta=? " +
-                    " and codigoVerificacion=? ";
+					"update tarjeta set saldo = ? where numeroTarjeta=?";
     
     private static final String SELECT_TARJETA_QRY =
                     "select * from tarjeta " +
@@ -233,13 +225,14 @@ public class VisaDAOBean extends DBTester implements VisaDAOLocal{
         Connection con = null;
         Statement stmt = null;
         ResultSet rs = null;
+        double saldo;
         String select;
         boolean ret = false;
         String codRespuesta = "999"; // En principio, denegado
 
         // TODO: Utilizar en funcion de isPrepared()
         PreparedStatement pstmt = null;
-
+		errorLog("este es nuestro codigo");
         // Calcular pago.
         // Comprobar id.transaccion - si no existe,
         // es que la tarjeta no fue comprobada
@@ -262,11 +255,7 @@ public class VisaDAOBean extends DBTester implements VisaDAOLocal{
 				select = SELECT_TARJETA_SALDO_QRY;
 				errorLog(select);
 				pstmt = con.prepareStatement(select);
-                pstmt.setString(1, tarjeta.getNumero());
-                pstmt.setString(2, tarjeta.getTitular());
-                pstmt.setString(3, tarjeta.getFechaEmision());
-                pstmt.setString(4, tarjeta.getFechaCaducidad());
-                pstmt.setString(5, tarjeta.getCodigoVerificacion());
+                pstmt.setString(1, pago.getTarjeta().getNumero());
                 rs = pstmt.executeQuery();
                 
                 if (rs.next()) {
@@ -274,12 +263,9 @@ public class VisaDAOBean extends DBTester implements VisaDAOLocal{
 						String update = UPDATE_TARJETA_SALDO_QRY;
 						errorLog(update);
 						pstmt = con.prepareStatement(update);
-						pstmt.setDouble(rs.getDouble("saldo")-pago.getImporte());
-						pstmt.setString(1, tarjeta.getNumero());
-						pstmt.setString(2, tarjeta.getTitular());
-						pstmt.setString(3, tarjeta.getFechaEmision());
-						pstmt.setString(4, tarjeta.getFechaCaducidad());
-						pstmt.setString(5, tarjeta.getCodigoVerificacion());
+						saldo = rs.getDouble("saldo")-pago.getImporte();
+						pstmt.setDouble(1, saldo);
+						pstmt.setString(2, pago.getTarjeta().getNumero());
 						//ret = false;
 					    if (!pstmt.execute()
 							    && pstmt.getUpdateCount() == 1) {
