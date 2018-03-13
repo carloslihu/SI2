@@ -327,7 +327,7 @@ public class VisaDAOWS extends DBTester {
      * @param idComercio
      * @return
      */
-    @WebMethod(operationName="realizaPago")
+    @WebMethod(operationName="getPagos")
     public ArrayList <PagoBean> getPagos(@WebParam(name = "idComercio") String idComercio) {
 
         PreparedStatement pstmt = null;
