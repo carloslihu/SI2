@@ -4,6 +4,7 @@
 sudo /opt/si2/virtualip.sh eth0
 #local
 export J2EE_HOME=/usr/local/glassfish-4.1.1/glassfish
+export PATH=/usr/local/glassfish-4.1.1/glassfish/bin/:$PATH
 #MV
 # export J2EE_HOME=/opt/glassfish4/glassfish
 
