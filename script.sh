@@ -1,8 +1,8 @@
 #!/bin/bash
 
-
+#local comun
 sudo /opt/si2/virtualip.sh eth0
-#local
+#local PC1
 export J2EE_HOME=/usr/local/glassfish-4.1.1/glassfish
 export PATH=/usr/local/glassfish-4.1.1/glassfish/bin/:$PATH
 #MV

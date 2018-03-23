@@ -15,10 +15,10 @@
         <stringProp name="TestPlan.comments">Consultas variadas</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">100</stringProp>
+          <stringProp name="LoopController.loops">10</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1263751540000</longProp>
         <longProp name="ThreadGroup.end_time">1263751540000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -95,7 +95,7 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="idComercio" elementType="Argument">
               <stringProp name="Argument.name">idComercio</stringProp>
-              <stringProp name="Argument.value">314</stringProp>
+              <stringProp name="Argument.value">336</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="thinkTimeMin" elementType="Argument">
