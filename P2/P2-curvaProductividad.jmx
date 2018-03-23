@@ -17,7 +17,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">10</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2100</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2400</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1263751540000</longProp>
         <longProp name="ThreadGroup.end_time">1263751540000</longProp>
@@ -59,7 +59,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -95,7 +95,7 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="idComercio" elementType="Argument">
               <stringProp name="Argument.name">idComercio</stringProp>
-              <stringProp name="Argument.value">336</stringProp>
+              <stringProp name="Argument.value">436</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="thinkTimeMin" elementType="Argument">
