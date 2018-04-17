@@ -7,6 +7,8 @@ export J2EE_HOME=/usr/local/glassfish-4.1.1/glassfish
 export PATH=/usr/local/glassfish-4.1.1/glassfish/bin/:$PATH
 #MV
 # export J2EE_HOME=/opt/glassfish4/glassfish
+export AS_ADMIN_USER=admin
+export AS_ADMIN_PASSWORDFILE=/opt/SI2/passwordfile
 
 ant todo
 
