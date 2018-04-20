@@ -1,0 +1,80 @@
+2018-04-20 17:47:18,191 INFO o.a.j.u.JMeterUtils: Setting Locale to es_ES
+2018-04-20 17:47:18,207 INFO o.a.j.u.JMeterUtils: Could not find resources for 'es_ES', using 'es'
+2018-04-20 17:47:18,208 INFO o.a.j.JMeter: Loading user properties from: /home/alumnos/e321786/si2/P3/apache-jmeter-4.0/bin/user.properties
+2018-04-20 17:47:18,208 INFO o.a.j.JMeter: Loading system properties from: /home/alumnos/e321786/si2/P3/apache-jmeter-4.0/bin/system.properties
+2018-04-20 17:47:18,213 INFO o.a.j.JMeter: Copyright (c) 1998-2018 The Apache Software Foundation
+2018-04-20 17:47:18,213 INFO o.a.j.JMeter: Version 4.0 r1823414
+2018-04-20 17:47:18,213 INFO o.a.j.JMeter: java.version=1.8.0_131
+2018-04-20 17:47:18,213 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2018-04-20 17:47:18,213 INFO o.a.j.JMeter: os.name=Linux
+2018-04-20 17:47:18,214 INFO o.a.j.JMeter: os.arch=amd64
+2018-04-20 17:47:18,214 INFO o.a.j.JMeter: os.version=3.13.0-24-generic
+2018-04-20 17:47:18,214 INFO o.a.j.JMeter: file.encoding=UTF-8
+2018-04-20 17:47:18,214 INFO o.a.j.JMeter: Max memory     =1847590912
+2018-04-20 17:47:18,214 INFO o.a.j.JMeter: Available Processors =4
+2018-04-20 17:47:18,220 INFO o.a.j.JMeter: Default Locale=español (España)
+2018-04-20 17:47:18,221 INFO o.a.j.JMeter: JMeter  Locale=español (España)
+2018-04-20 17:47:18,221 INFO o.a.j.JMeter: JMeterHome=/home/alumnos/e321786/si2/P3/apache-jmeter-4.0
+2018-04-20 17:47:18,221 INFO o.a.j.JMeter: user.dir  =/home/alumnos/e321786/si2/P3
+2018-04-20 17:47:18,221 INFO o.a.j.JMeter: PWD       =/home/alumnos/e321786/si2/P3
+2018-04-20 17:47:18,222 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: localhost FullName: localhost
+2018-04-20 17:47:18,445 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2018-04-20 17:47:18,480 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2018-04-20 17:47:18,480 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2018-04-20 17:47:18,537 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2018-04-20 17:47:18,977 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2018-04-20 17:47:18,977 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2018-04-20 17:47:20,475 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-04-20 17:47:20,476 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-04-20 17:47:20,476 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-04-20 17:47:20,476 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-04-20 17:47:20,477 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2018-04-20 17:47:20,477 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2018-04-20 17:47:20,824 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2018-04-20 17:47:20,825 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /home/alumnos/e321786/si2/P3/apache-jmeter-4.0/bin/proxyserver.jks
+2018-04-20 17:47:20,967 INFO o.a.j.s.FileServer: Default base='/home/alumnos/e321786/si2/P3'
+2018-04-20 17:47:21,314 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2018-04-20 17:47:21,314 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2018-04-20 17:47:21,314 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2018-04-20 17:47:21,314 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2018-04-20 17:47:25,051 INFO o.a.j.g.a.Load: Loading file: /home/alumnos/e321786/si2/P3/P2.jmx
+2018-04-20 17:47:25,051 INFO o.a.j.s.FileServer: Set new base='/home/alumnos/e321786/si2/P3'
+2018-04-20 17:47:25,191 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-04-20 17:47:25,201 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2018-04-20 17:47:25,203 INFO o.a.j.s.SaveService: Using SaveService properties version 4.0
+2018-04-20 17:47:25,206 INFO o.a.j.s.SaveService: Loading file: /home/alumnos/e321786/si2/P3/P2.jmx
+2018-04-20 17:47:25,376 INFO o.a.j.s.FileServer: Set new base='/home/alumnos/e321786/si2/P3'
+2018-04-20 17:50:43,648 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2018-04-20 17:50:43,650 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-04-20 17:50:43,651 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-04-20 17:50:43,656 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2018-04-20 17:50:43,811 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P3
+2018-04-20 17:50:43,811 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P3.
+2018-04-20 17:50:43,811 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-04-20 17:50:43,811 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 perThread=5000.0 delayedStart=false
+2018-04-20 17:50:43,813 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2018-04-20 17:50:43,814 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2018-04-20 17:50:43,816 INFO o.a.j.t.JMeterThread: Thread started: P3 1-1
+2018-04-20 17:50:43,818 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2018-04-20 17:50:43,825 INFO o.a.j.p.h.s.HTTPJavaImpl: Maximum connection retries = 0
+2018-04-20 17:50:51,266 INFO o.a.j.t.JMeterThread: Thread is done: P3 1-1
+2018-04-20 17:50:51,266 INFO o.a.j.t.JMeterThread: Thread finished: P3 1-1
+2018-04-20 17:50:51,267 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2018-04-20 17:50:51,267 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2018-04-20 17:50:51,267 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2018-04-20 17:54:17,936 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2018-04-20 17:54:17,937 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-04-20 17:54:17,938 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2018-04-20 17:54:18,124 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : P3
+2018-04-20 17:54:18,124 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group P3.
+2018-04-20 17:54:18,125 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-04-20 17:54:18,125 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 perThread=5000.0 delayedStart=false
+2018-04-20 17:54:18,132 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2018-04-20 17:54:18,132 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2018-04-20 17:54:18,132 INFO o.a.j.t.JMeterThread: Thread started: P3 1-1
+2018-04-20 17:54:18,135 INFO o.a.j.s.FileServer: Stored: datagen/listado.csv
+2018-04-20 17:54:31,926 INFO o.a.j.t.JMeterThread: Thread is done: P3 1-1
+2018-04-20 17:54:31,926 INFO o.a.j.t.JMeterThread: Thread finished: P3 1-1
+2018-04-20 17:54:31,927 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2018-04-20 17:54:31,927 INFO o.a.j.s.FileServer: Close: datagen/listado.csv
+2018-04-20 17:54:31,927 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
