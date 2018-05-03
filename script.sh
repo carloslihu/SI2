@@ -49,3 +49,7 @@ usar el siguiente comando: sudo service postgresql-8.4 stop
 
 Prepararemos el script JMX para que acceda desde PC1 a PC2VM a través de su dirección IP
 10.X.Y.2 (es decir, accede a la máquina virtual del otro PC)
+
+#examen
+zip -r SI2EXT2401P02LiHuCarlos.tar.gz *
+scp <file> <user>@<ip>:
